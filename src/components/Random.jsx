@@ -27,7 +27,7 @@ const Random = () => {
     flex flex-col items-center gap-y-5 mt-[15px]"
     >
       <h1 className="font-bold text-2xl underline mt-[15px]">A RANDOM GIFS</h1>
-      {loading ? <Spinner /> : <img src={gif} width="450" />}
+      {loading ? <Spinner /> : <img src={gif} width="480" />}
 
       <button
         onClick={clickHandler}
