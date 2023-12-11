@@ -47,7 +47,6 @@ const Tag = () => {
         onChange={changeHandler}
         value={tag}
       />
-
       <button
         onClick={clickHandler}
         className="
