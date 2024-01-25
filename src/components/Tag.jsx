@@ -3,7 +3,7 @@ import axios from "axios";
 import Spinner from "./Spinner";
 const API_KEY = process.env.REACT_APP_GIPHY_API_KEY;
 const Tag = () => {
-  const [tag, setTag] = useState("Friends");
+  const [tag, setTag] = useState(" ");
   {
     /*random gig genrate in input */
   }
@@ -46,6 +46,7 @@ const Tag = () => {
         className="w-10/12 text-lg py-2 rounded-lg mb-[3px] text-center "
         onChange={changeHandler}
         value={tag}
+        placeholder=" "
       />
       <button
         onClick={clickHandler}
