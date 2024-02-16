@@ -46,7 +46,7 @@ const Tag = () => {
         className="w-10/12 text-lg py-2 rounded-lg mb-[3px] text-center "
         onChange={changeHandler}
         value={tag}
-        placeholder=" "
+        placeholder=" Generate-Gif"
       />
       <button
         onClick={clickHandler}

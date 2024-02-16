@@ -10,6 +10,7 @@ const Random = () => {
     setLoading(true);
     const url = `https://api.giphy.com/v1/gifs/random?api_key=${API_KEY}`;
     const { data } = await axios.get(url);
+    console.log(data);
     const imageSource = data.data.images.downsized_large.url;
     setGif(imageSource);
     setLoading(false);
@@ -26,8 +27,10 @@ const Random = () => {
       className="w-1/2  bg-green-500 rounded-lg border border-black
     flex flex-col items-center gap-y-5 mt-[15px]"
     >
-      <h1 className="font-bold text-2xl underline mt-[15px]">A RANDOM GIFS</h1>
-      {loading ? <Spinner /> : <img src={gif} width="480" />}
+      <h1 className=" mt-[15px] text-2xl underline  font-bold">
+        A RANDOM GIFS
+      </h1>
+      {loading ? <Spinner /> : <img src={gif} width="480 " />}
 
       <button
         onClick={clickHandler}
