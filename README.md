@@ -19,5 +19,5 @@ Giphy Api Key
 4.Select "Api" from the model and click on "Next Step".
 5.Fill the information for your app icluding its name and brief description.
 6.Once you have created your app you will be taken to a page with your Api Key. Cpy this key and use to access Giphy in your application.
-Note: Store the api key in .nev file for security. 
+Note: Store the api key in .env file for security. 
 
