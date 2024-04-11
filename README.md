@@ -13,7 +13,7 @@ Tailwind
 Giphy Api Key
 
 # How To Generate Gihy Api Key. 
-1.Visit the developer website of Giphy.com(https://developers.giphy.com)
+1.Visit the developer website of Giphy.com(https://developers.giphy.com).
 2.Create a App or if you have logged in.
 3.Once you logged in select app.
 4.Select "Api" from the model and click on "Next Step".
