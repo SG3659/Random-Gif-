@@ -34,16 +34,21 @@ const Tag = () => {
   }
   return (
     <div
-      className="w-1/2  bg-blue-500 rounded-lg border border-black
+      className="w-1/2  bg-slate-100 rounded-lg border border-black
     flex flex-col items-center gap-y-5 mt-[15px]"
     >
       <h1 className="font-bold text-2xl underline mt-[15px]">
-        RANDOM {tag} GIFS
+        Generate GIF
       </h1>
-      {loading ? <Spinner /> : <img src={gif} width="480" />}
-
+      <div className="w-96 flex justify-center items-center">
+        {loading ? (
+          <Spinner />
+        ) : (
+          <img src={gif} width="480" className="rounded-lg shadow-xl" />
+        )}
+      </div>
       <input
-        className="w-10/12 text-lg py-2 rounded-lg mb-[3px] text-center "
+        className="w-10/12 text-lg py-2 rounded-lg mb-[3px] text-center"
         onChange={changeHandler}
         value={tag}
         placeholder=" Generate-Gif"

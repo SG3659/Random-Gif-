@@ -1,14 +1,15 @@
 import Random from "./components/Random";
 import Tag from "./components/Tag";
+import Button from "./components/Button"
 export default function App() {
   return (
     <div
-      className="w-full h-screen flex flex-col background relative overflow-x-hidden
-    items-center"
+      className="w-full h-screen flex flex-col background  overflow-x-hidden
+    items-center bg-[#4A4E69] "
     >
       <h1
-        className="bg-white rounded-lg  text-center w-11/12
-      font-bold text-4xl mt-[40px]  py-2 px-2  "
+        className="bg-[#22223B] rounded-lg  text-center w-11/12
+      font-bold text-4xl mt-[40px]  py-2 px-2 text-gray-100 "
       >
         Random GIF
       </h1>
@@ -18,7 +19,10 @@ export default function App() {
       >
         <Random />
         <Tag />
+        <Button/>
       </div>
+      
+
     </div>
   );
 }
